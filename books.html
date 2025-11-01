@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Books | UniReads Kenya</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+ <header>
+  <div class="logo">
+    <a href="index.html">
+      <img src="Gemini_Generated_Image_xd0v6lxd0v6lxd0v-removebg-preview.png" alt="UniReads Kenya E-commerce Logo" class="header-logo">
+    </a>
+  </div>
+  <nav>
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="books.html">Books</a></li>
+      <li><a href="about.html">About Us</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="header-icons">
+    <a href="cart.html" class="cart-icon">🛒</a>
+  </div>
+</header>
+  <main>
+    <h2>Our Books</h2>
+
+    <div class="filter-bar">
+      <label>Category: </label>
+      <select id="category-filter" onchange="filterBooks()">
+        <option value="all">All</option>
+        <option value="textbook">Textbooks</option>
+        <option value="revision">Revision Notes</option>
+        <option value="stationery">Stationery</option>
+      </select>
+    </div>
+
+    <div class="product-grid" id="product-grid">
+      <!-- Example book cards -->
+      <div class="product-card" data-category="textbook">
+        <img src="download.jpeg" alt="">
+        <h3>A+ Revision KCSE Biology</h3>
+        <p>KES 790</p>
+        <button onclick="addToCart('A+ Revision KCSE Biology', 790)">Add to Cart</button>
+      </div>
+
+      <div class="product-card" data-category="textbook">
+        <img src="shopping.webp" alt="">
+        <h3>Comprehensive Secondary School Atlas</h3>
+        <p>KES 1,067</p>
+        <button onclick="addToCart('Secondary School Atlas', 1067)">Add to Cart</button>
+      </div>
+
+      <div class="product-card" data-category="revision">
+        <img src="Achievers-Math-KCSE-Revision-FRONT-COVER.jpg"
+        <h3>Mathematics for Kenya Schools (F2)</h3>
+        <p>KES 650</p>
+        <button onclick="addToCart('Mathematics for Kenya Schools (F2)', 650)">Add to Cart</button>
+      </div>
+
+      <div class="product-card" data-category="stationery">
+        <img src="download (1).jpeg" alt="">
+        <h3>Stationery Set – Notebook & Pens</h3>
+        <p>KES 450</p>
+        <button onclick="addToCart('Stationery Set', 450)">Add to Cart</button>
+      </div>
+
+      <!-- Add more items similarly -->
+    </div>
+
+  </main>
+
+  <footer>
+    <p>&copy; 2025 UniReads Kenya</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
